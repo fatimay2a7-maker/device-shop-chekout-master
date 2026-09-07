@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url(./resources/background-image.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  font-family: sans-serif;
+  color: #2f3330;
+  background-color: #f3f4f6;
+}
+.author-info {
+  display: none;
+}
+.chekout {
+  background-color: #e5e7eb;
+  margin: 10px 10px 0 10px;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+  margin-top: 60px;
+}
+
+.chekout > .pic {
+  background-color: #f3f4f6;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #d1d1d3 solid 0.1px;
+
+  height: 100px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.Check-out-title {
+  color: #e5e7eb;
+
+  font-size: 25px;
+}
+.Check-out-paragraph {
+  background-color: #1d1d1f;
+  color: #c2c4c7;
+
+  width: fit-content;
+  padding: 7px 10px;
+  border-radius: 25%;
+  font-size: 12px;
+  margin-left: 20px;
+  font-weight: 700;
+}
+.info > h3,
+.price > p {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.info > p {
+  color: rgb(137, 133, 133);
+  padding-top: 7px;
+  font-weight: 600;
+}
+.info > .how-many {
+  padding-top: 20px;
+}
+
+.price {
+  text-align: right;
+}
+.price > img {
+  padding-top: 60px;
+}
+hr {
+  grid-column: span 3;
+  border-color: #fefeff97;
+}
+.coupon {
+  background-color: #e5e7eb;
+  margin: 0 10px 0 10px;
+  padding: 0px 20px 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 10px;
+}
+.coupon input {
+  border: #d1d1d3 solid 0.1px;
+  padding: 10px;
+  border-radius: 7px;
+  width: 170px;
+  height: 50px;
+}
+.coupon button {
+  padding: 10px;
+  border-radius: 7px;
+  position: relative;
+  right: 0px;
+  width: 100%;
+  color: white;
+  background-color: #1d1d1f;
+  border: none;
+  height: 50px;
+}
+
+.total-bill-number p {
+  padding-top: 10px;
+}
+.total-bill p {
+  padding-top: 10px;
+}
+.total-bill-number {
+  text-align: right;
+  margin-top: -18px;
+}
+.total-bill {
+  margin-top: -18px;
+}
+
+.contact-info {
+  background-color: #ffffff;
+  margin: 0 10px 0 10px;
+  padding: 20px 20px 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  height: 200px;
+}
+
+.contact-info input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #f3f4f6;
+  border: #d2d5da solid 0.1px;
+}
+.contact-info input::placeholder {
+  color: #676867;
+}
+.contact-info label {
+  display: block;
+  padding-bottom: 5px;
+}
+.last-part {
+  background-color: #ffffff;
+  margin: 0 10px 0px 10px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 0 0 20px 20px;
+  height: 200px;
+  column-gap: 0px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  color: #111113aa;
+  font-weight: bold;
+}
+.Country input {
+  width: 90%;
+
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #f3f4f6;
+  border: #d2d5da solid 0.1px;
+}
+.Postal-Code input {
+  width: 100%;
+
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #f3f4f6;
+  border: #d2d5da solid 0.1px;
+}
+button {
+  background-color: #1d1d1f;
+  color: #ffffff;
+  padding: 10px 40px;
+  width: 200%;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    height: 100vh;
+  }
+  .chekout {
+    margin: 50px 0 0 50px;
+    border-radius: 20px 0 0 0;
+    height: 50%;
+  }
+  .coupon {
+    margin: 0 0 0 50px;
+    border-radius: 0 0 0 20px;
+    height: 30%;
+  }
+  .contact-info {
+    margin: 0px 50px 0px 0;
+    border-radius: 0 20px 0 0;
+    height: 20%;
+  }
+  .last-part {
+    margin: 0 50px 0 0;
+    border-radius: 0 0 20px;
+    height: 50%;
+    row-gap: 10px;
+    padding-top: 50px;
+  }
+  .Country {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  .Postal-Code {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  .last-part input,
+  button {
+    height: 50px;
+  }
+  .contact-info input {
+    height: 50px;
+  }
+  .first {
+    height: 100vh;
+  }
+
+  .secend {
+    height: 80vh;
+    background-color: #ffffff;
+
+    margin: 50px 50px 0px 0;
+    border-radius: 0 20px 20px 0;
+  }
+  body {
+    background-size: cover;
+    height: 250px;
+  }
+  .chekout > .pic {
+    width: 70%;
+  }
+  .info {
+    margin-left: -60px;
+  }
+  .coupon input {
+    width: 500px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1025px) {
+  .coupon input {
+    width: 150px;
+    margin-top: 30px;
+  }
+  .coupon button {
+    margin-top: 30px;
+  }
+  .info {
+    margin-left: -0px;
+  }
+  .chekout .pic {
+    width: 100px;
+  }
+  .Country,
+  .Postal-Code {
+    margin-top: 50px;
+    width: 150px;
+  }
+}
